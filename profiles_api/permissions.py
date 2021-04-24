@@ -12,7 +12,7 @@ class UpdateOwnProfile(permissions.BasePermission):
         return obj.id == request.user.id
 
 
-class UpdateOwnStatus(permissions.BasePermission):
+class PostOwnStatus(permissions.BasePermission):
     """Allow user to update their own staus"""
 
     def has_object_permission(self, request, view, obj):
